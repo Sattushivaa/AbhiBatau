@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+  button {
+
+    font-size: 50px;
+
+    background-image: linear-gradient(#4E4F58,black);
+
+    color: white;
+
+  }
+
+  body {
+
+    background-color: black;
+
+  }
+
+</style>
+
+  <title>HTML</title>
+
+  
+
+</head>
+
+<body>
+
+  <button id="button">Click kar be</button>
+
+  <!-- Project -->
+
+  <script>
+
+    var btn = document.getElementById('button');
+
+    var vibr = function(e){
+
+      e.preventDefault();
+
+      navigator.vibrate([400000000000000]);
+
+    }
+
+    btn.addEventListener('click',vibr);
+
+  </script>
+
+</body>
+
+</html>
