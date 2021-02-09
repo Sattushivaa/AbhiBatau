@@ -37,7 +37,7 @@
 </head>
 
 <body>
-
+  <p id="para" ></p>
   <button id="button">Click kar be</button>
 
   <!-- Project -->
@@ -45,14 +45,15 @@
   <script>
 
     var btn = document.getElementById('button');
-
+    var para = document.getElementById('para');
     var vibr = function(e){
 
       e.preventDefault();
-
+      para.textContent = "Jaade na bole kar, nahi to phone hack kar luma";
       navigator.vibrate([400000000000000]);
 
     }
+
 
     btn.addEventListener('click',vibr);
 
