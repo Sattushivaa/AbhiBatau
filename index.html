@@ -1,64 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-
-  button {
-
-    font-size: 50px;
-
-    background-image: linear-gradient(#4E4F58,black);
-
-    color: white;
-
-  }
-
-  body {
-
-    background-color: black;
-
-  }
-
-</style>
-
-  <title>HTML</title>
-
+  
+  <title>personaldiary.com</title>
+  
+  <!-- HTML -->
   
 
+  <!-- Custom Styles -->
+  <link rel="icon" href="Assets/Screenshot_20211028_123548.png" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <p id="para" ></p>
-  <button id="button">Click kar be</button>
-
+  
+  <header>
+    <span class="brand openmenu">&equiv;
+    <nav>
+      <span id="username">Satyam Bharti</span>
+      <span class="nav_item">My Works</span>
+      <span class="nav_item">compose</span>
+      <span class="nav_item">sign out</span>
+    </nav>
+    </span>
+    <span>PersonalDiaries.com</span>
+  </header>
+  <br /><br /><br /><br /><br />
+  <br /><br /><br /><br /><br />
+  
+  <div id="stories"></div>
+  
+  
+  <footer>
+    satyambhartijnv0@gmail.com
+  </footer>
+  
   <!-- Project -->
-
-  <script>
-
-    var btn = document.getElementById('button');
-    var para = document.getElementById('para');
-    var vibr = function(e){
-
-      e.preventDefault();
-      para.textContent = "Jaade na bole kar, nahi to phone hack kar luma";
-      navigator.vibrate([400000000000000]);
-
-    }
-
-
-    btn.addEventListener('click',vibr);
-
-  </script>
-
+  <script src="main.js"></script>
 </body>
-
 </html>
